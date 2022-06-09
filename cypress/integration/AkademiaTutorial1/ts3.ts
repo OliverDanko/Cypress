@@ -12,6 +12,7 @@ describe('Test set 1', () =>{
         cy.get('[name="user[password]"]').type(Cypress.env("password"))
         cy.get('[name = "user[terms]"]').eq(1).click()
         cy.get('.g-recaptcha').click()
+        cy.wait(10000)
         cy.request({
             method: 'POST',
             url: 'https://mailosaur.com/api/messages/search?server=32kznrvj',
@@ -23,6 +24,7 @@ describe('Test set 1', () =>{
                 }
         }).then( task => {
             expect(task.body.items[0].subject).to.contain("Your Ultimate QA course details.")
+            cy.wait(10000)
             cy.request({
                 method: 'DELETE',
                 url: 'https://mailosaur.com/api/messages/'.concat(task.body.items[0].id),
