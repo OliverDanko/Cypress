@@ -15,6 +15,9 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
-
+require('cypress-dark')
+import { commandTimings } from 'cypress-timings'
+commandTimings()
+// commandTimings()
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

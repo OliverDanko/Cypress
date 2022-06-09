@@ -1,0 +1,11 @@
+{
+    "defaultCommandTimeout": 10000,
+    "env": {
+        "username": "@32kznrvj.mailosaur.net",
+        "password": "asdfgh123",
+        "name": "sadsad",
+        "surname": "sadasas"
+    },
+    "theme": "halloween"
+
+}

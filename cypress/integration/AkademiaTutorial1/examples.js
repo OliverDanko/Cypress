@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 it('Akademia testing aplikacie', () => {
-cy.visit('/kontakt')
+cy.visit('https://demoqa.com/');
 
 // cy.get('.wpcf7-form-control wpcf7-text wpcf7-validates-as-required').click()
 
@@ -11,9 +11,13 @@ cy.visit('/kontakt')
 
 // cy.get('#sf.variant').click()
 
-cy.contains('REFERENCIE')
+cy.contains('Elements');
 
-cy.get('#menu-item-1918').click()
+cy.get('.card-up').eq(0).click();
+
+cy.get('#item-0').click();
+
+cy.get('#userName').click().type('Oliver Danko');
 
 // cy.click({force: true}) kliknut aj ked nieco nieje vidno
 });

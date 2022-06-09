@@ -1,0 +1,11 @@
+{
+    "viewportWidth" : 1200,
+    "viewportHeight" : 720,
+    "defaultCommandTimeout" : 10000,
+
+
+    "env": {
+        "email": "basrborahudakova@gmail.com",
+        "passwd": "123456789"
+    }
+}
